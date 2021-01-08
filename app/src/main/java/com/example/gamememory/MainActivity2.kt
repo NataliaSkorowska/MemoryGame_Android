@@ -19,7 +19,8 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
 
         val images = mutableListOf(R.drawable.ic_cut, R.drawable.ic_flower, R.drawable.ic_star, R.drawable.ic_pet)
-        //dodanie obrazków 2 razy, aby stworzyć pary
+
+        //stworzenie par z obrazków
         images.addAll(images)
         //wymieszanie przypadkowo obrazków
         images.shuffle()
@@ -27,7 +28,7 @@ class MainActivity2 : AppCompatActivity() {
                 imageButton6, imageButton7, imageButton8)
 
         cards = buttons.indices.map { index ->
-            MemoryCard(images[index]) //indeksowanie obrazków
+            MemoryCard(images[index])
         }
 
         buttons.forEachIndexed { index, button ->
@@ -39,6 +40,8 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
     //zmiana - jeśli znaleziono parę, zmniejsz widoczność
+
+
     private fun updateViews() {
         cards.forEachIndexed { index, card ->
             val button = buttons[index]
@@ -52,7 +55,7 @@ class MainActivity2 : AppCompatActivity() {
 
     private fun updateModels(position: Int) {
         val card = cards[position]
-        //Zakaz przewracania karty, która jest już odkryta
+
         if (card.isFaceUp) {
             Toast.makeText(this, "Nieprawidłowy ruch", Toast.LENGTH_SHORT).show()
             return
@@ -62,11 +65,9 @@ class MainActivity2 : AppCompatActivity() {
         // 1 karta przewrócona wcześniej -obróc kartę i sprawdź czy zgadza się z poprzednią
         // 2 karty przewrócone wcześniej - przewróć kartę
         if (indexOfSingleSelectedCard == null) {
-            // 0 lub 2 kart wybrane poprzednio
             restoreCards()
             indexOfSingleSelectedCard = position
         } else {
-            // 1 karta wybrana poprzednio
             checkForMatch(indexOfSingleSelectedCard!!, position)
             indexOfSingleSelectedCard = null
         }
