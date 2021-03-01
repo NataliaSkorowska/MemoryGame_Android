@@ -88,7 +88,7 @@ Deklaracja zmiennej, a następnie pobranie widoku button - przycisku odpowiadaj�
 ![ekran początkowy](./ReadmeIMG/Obraz8.png)
   
   Stworzenie funkcji checkForMatch, która sprawdza czy dwie odkryte karty są identyczne. 
-I dodanie komunikatu, który informuje użytkownika o znalezieniu pary.
+I dodanie komunikatu, który informuje użytkownika o odnalezieniu pary.
 
 ![ekran początkowy](./ReadmeIMG/Obraz10.png)
 
