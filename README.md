@@ -50,7 +50,7 @@ Ekran z planszą gry:
  ## Kod 
 Opis realizacji projektu:
   
-Deklaracja zmiennej, a następnie pobranie widoku button - przycisku odpowiadającego za przejście z ekranu startowego do ekranu z główną plansza gry i stworzenie funkcji openActivity2, która realizuje tą funkcjonalność.
+Deklaracja zmiennej, a następnie pobranie widoku button-przycisku odpowiadającego za przejście z ekranu startowego do ekranu z główną plansza gry i stworzenie funkcji openActivity2, która realizuje tą funkcjonalność.
 
  
  ![pobranie widoku](./ReadmeIMG/Obraz1.png)
