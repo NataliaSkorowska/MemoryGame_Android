@@ -92,7 +92,7 @@ I dodanie komunikatu, który informuje użytkownika o odnalezieniu pary.
 
 ![ekran początkowy](./ReadmeIMG/Obraz10.png)
 
-  Jeśli nie znaleziono pary po odkryciu 2 obrazków, obróć ponownie do dołu wszystkie karty.
+ Jeśli nie znaleziono pary po odkryciu 2 obrazków, obróć ponownie do dołu wszystkie karty.
 
 ![ekran początkowy](./ReadmeIMG/Obraz9.png)
 
